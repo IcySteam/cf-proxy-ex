@@ -29,7 +29,7 @@ return str.split("").map(ch => \`&#\${ch.charCodeAt(0)};\`).join("");
 
 setTimeout(() => {
 var hint = \`
-Warning: You are currently using a web proxy, so do not log in to any website. Click to close this hint. For further details, please visit the link below.
+Warning: You are currently using a web mirror proxy - DO NOT log in to any website! Click to close this notice. To learn more, please visit the link below.
 警告：您当前正在使用网络代理，请勿登录任何网站。单击关闭此提示。详情请见以下链接。
 \`;
 
@@ -1090,9 +1090,9 @@ const mainPage = `
 <form id="urlForm" onsubmit="redirectToProxy(event)">
     <h1>Cf-proxy-ex</h1>
     <label for="targetUrl">
-        <input type="text" id="targetUrl" placeholder="Enter the target website here...">
+        <input type="text" id="targetUrl" placeholder="Enter the target website's URL here...">
     </label>
-    <button type="submit" id="jump"> Jump! </button>
+    <button type="submit" id="go"> Go! </button>
 </form>
 </div>
 
@@ -1100,16 +1100,16 @@ const mainPage = `
   <li>
       如何使用 / How to use
       <br>
-      1. 在上方输入框输入要访问的网址 / Type the website link above
+      1. 在上方输入框输入要访问的网址 / Enter the target website's URL above
       <br>
-      2.在代理网址后输入您要访问的网址 / Type the website link after the proxy website's link<br>
+      2.在代理网址后输入您要访问的网址 / Enter the target website's URL after this proxy site's URL<br>
   </li>
   <br>
-  <li>若显示 400 Bad Request 错误，请清本网站Cookie / Please clear this website's cookie if it shows 400 Bad Request</li>
+  <li>若显示 400 Bad Request 错误，请清本网站Cookie / If you see a 400 Bad Request error, please clear your browser cookies for this proxy site</li>
   <br>
-  <li>由于部分网站有代码混淆，不能保证所有网页的功能或渲染正常 / Some website may perform malfunction due to JS/CSS obfuscation</li>
+  <li>由于部分网站有代码混淆，不能保证所有网页的功能或渲染正常 / Some websites may not render or function properly due to JS/CSS obfuscation</li>
   <br>
-  <li><strong>强烈不建议在镜像页面中登录账号 / Strongly discourage logging into any mirrored website</strong></li>
+  <li><strong>强烈不建议在镜像页面中登录账号 / Never enter your login details on a mirrored proxy site!</strong></li>
   <br><br><br>
   <li style="text-align:center;font-size: calc(100% + 2px);">
       <br>
@@ -1125,7 +1125,6 @@ const mainPage = `
 <ul style="position:absolute;bottom:15px;text-align:center;">
 <li>
 <p>本代理为 <a href="https://github.com/1234567Yang/cf-proxy-ex" target="_blank">开源项目</a> / This is an <a href="https://github.com/1234567Yang/cf-proxy-ex" target="_blank">open source project</a></p>
-<p>感谢 <a href="https://github.com/Tayasui-rainnya" target="_blank">@Tayasui-rainnya</a> 的主页设计 / Thanks for <a href="https://github.com/Tayasui-rainnya" target="_blank">@Tayasui-rainnya</a>'s home page design</p>
 </li>
 </ul>
 
