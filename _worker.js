@@ -976,7 +976,7 @@ const mainPage = `
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Cloudflare Worker Proxy</title>
+    <title>Cloudflare Workers Proxy</title>
     <style>
         * {
             margin: 0;
@@ -1087,7 +1087,7 @@ const mainPage = `
 <body>
 <div class="container">
 <form id="urlForm" onsubmit="redirectToProxy(event)">
-    <h1>Cloudflare Worker Proxy</h1>
+    <h1>Cloudflare Workers Proxy</h1>
     <label for="targetUrl">
         <input type="text" id="targetUrl" placeholder="Enter the target website's URL here...">
     </label>
