@@ -30,7 +30,6 @@ return str.split("").map(ch => \`&#\${ch.charCodeAt(0)};\`).join("");
 setTimeout(() => {
 var hint = \`
 Warning: You are currently using a web mirror proxy - DO NOT log in to any website! Click to close this notice. To learn more, please visit the link below.
-警告：您当前正在使用网络代理，请勿登录任何网站。单击关闭此提示。详情请见以下链接。
 \`;
 
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
@@ -977,7 +976,7 @@ const mainPage = `
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Cf-proxy-ex</title>
+    <title>Cloudflare Worker Proxy</title>
     <style>
         * {
             margin: 0;
@@ -1088,7 +1087,7 @@ const mainPage = `
 <body>
 <div class="container">
 <form id="urlForm" onsubmit="redirectToProxy(event)">
-    <h1>Cf-proxy-ex</h1>
+    <h1>Cloudflare Worker Proxy</h1>
     <label for="targetUrl">
         <input type="text" id="targetUrl" placeholder="Enter the target website's URL here...">
     </label>
