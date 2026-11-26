@@ -1230,7 +1230,7 @@ async function handleRequest(request) {
 
   const url = new URL(request.url);
   if (request.url.endsWith("favicon.ico")) {
-    return getRedirect("https://www.baidu.com/favicon.ico");
+    return getRedirect("https://www.cloudflare.com/favicon.ico");
   }
   if (request.url.endsWith("robots.txt")) {
     return new Response(`User-Agent: *
